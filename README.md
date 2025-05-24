@@ -35,7 +35,7 @@ sudo pacman -Su
 
 ## Install packages
 ```
-sudo pacman -S git zsh docker docker-compose cloudflared htop curl wget
+sudo pacman -S git zsh docker docker-compose cloudflared htop wget
 ```
 ## Script permission
 ```
