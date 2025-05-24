@@ -1,3 +1,38 @@
+# Arch setup
+[Arch config](https://wsldl-pg.github.io/ArchW-docs/How-to-Setup/#setup-after-install)
+
+## Root user password
+```
+passwd
+```
+```
+echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
+```
+## User setup
+```
+useradd -m -G wheel -s /bin/bash {username}
+```
+```
+passwd {username}
+```
+## Set default user
+```
+Arch.exe config --default-user {username}
+```
+## Pacman setup
+```
+sudo pacman-key --init
+```
+```
+sudo pacman-key --init
+```
+```
+sudo pacman -Sy archlinux-keyring
+```
+```
+sudo pacman -Su
+```
+
 ## Install packages
 ```
 sudo pacman -S git zsh docker docker-compose cloudflared htop curl wget
