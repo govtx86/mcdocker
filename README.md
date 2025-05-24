@@ -24,7 +24,7 @@ Arch.exe config --default-user {username}
 sudo pacman-key --init
 ```
 ```
-sudo pacman-key --init
+sudo pacman-key --populate
 ```
 ```
 sudo pacman -Sy archlinux-keyring
